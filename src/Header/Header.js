@@ -10,7 +10,7 @@ class Header extends React.Component {
         <div className="top-bar animate-dropdown"></div>
         <div className="main-header">
           <div className="container">
-            <h1 className="site-title">React Lite Level</h1>
+            <h1 className="site-title">React Курс Валют</h1>
 
           </div>
         </div>

@@ -1,6 +1,8 @@
 import React from 'react';
 import './Nav.css';
 
+import { Link as Linkes } from 'react-router-dom';
+
 class Nav extends React.Component {
   render() {
     return (
@@ -8,9 +10,9 @@ class Nav extends React.Component {
         <div className="container">
           <nav>
             <ul>
-              <li><a href="/">Главная</a></li>
+              <li><Linkes to="/">Главная</Linkes></li>
 
-              <li><a href="/About">Контакты</a></li>
+              <li><Linkes to="/About">Контакты</Linkes></li>
             </ul>
           </nav>
         </div>

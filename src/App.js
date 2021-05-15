@@ -1,7 +1,9 @@
 import React from 'react';
 import './App.css';
 
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+// import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { Switch as Switches } from 'react-router-dom';
+import { Route as Routes } from 'react-router-dom';
 
 import Header from './Header/Header';
 import Footer from './Footer/Footer';
@@ -16,12 +18,10 @@ class App extends React.Component {
         <Header />
         <div className="container">
           <main>
-            <Router>
-              <Switch>
-                <Route exact path="/" component={Rate} />
-                <Route exact path="/" component={About} />
-              </Switch>
-            </Router>
+            <Switches>
+              <Routes exact path="/" component={Rate} />
+              <Routes exact path="/" component={About} />
+            </Switches>
           </main>
         </div>
 
