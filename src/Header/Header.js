@@ -1,17 +1,16 @@
 import React from 'react';
-import './Header.css';
+import './Header.scss';
 
-import Nav from '../Nav/Nav'
+import Nav from './Nav/Nav'
+
 class Header extends React.Component {
 
   render() {
     return (
       <header>
-        <div className="top-bar animate-dropdown"></div>
         <div className="main-header">
-          <div className="container">
-            <h1 className="site-title">React Курс Валют</h1>
-
+          <div className="header-content _container">
+            <h1 className="header-content__title">Exchange Rates</h1>
           </div>
         </div>
         <Nav />

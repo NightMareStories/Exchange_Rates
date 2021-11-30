@@ -1,5 +1,6 @@
 import React from 'react';
-import './Rate.css';
+import './Rate.scss';
+
 import Calc from '../Calc/Calc';
 
 class Rate extends React.Component {
@@ -13,8 +14,7 @@ class Rate extends React.Component {
     this.getRate();
   }
   getRate = () => {
-    // 'https://api.exchangeratesapi.io/latest'
-    fetch('https://api.ratesapi.io/api/latest')
+    fetch('http://api.exchangeratesapi.io/v1/latest?access_key=97a3a9a0208b90896597ebcaf20c03e3')
       .then(data => {
         return data.json();
       })
@@ -31,14 +31,14 @@ class Rate extends React.Component {
   render() {
     return (
       <div className="rate">
-        <h3> Курс валют на {this.state.date}</h3>
-        <div className="flex-container">
+        <h3 className="rate-title">Exchange rate for {this.state.date}</h3>
+        <div className="rate-block">
           {Object.keys(this.state.currencyRate).map((keyName, i) =>
           (
-            <div className="block flex-item" key={keyName}>
+            <div className="rate-block__column rate-item" key={keyName}>
               <div className="currency-name">{keyName}</div>
               <div className="currency-in">{this.state.currencyRate[keyName].toFixed(2)}*</div>
-              <p>*Можно купить за 1 EUR</p>
+              <p>*Сan be bought for 1 EUR</p>
             </div>
           )
           )}

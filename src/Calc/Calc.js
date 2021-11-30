@@ -1,5 +1,5 @@
 import React from 'react';
-import './Calc.css';
+import './Calc.scss';
 
 class Calc extends React.Component {
   constructor(props) {
@@ -7,7 +7,6 @@ class Calc extends React.Component {
     this.state = {
       result: 0
     }
-
   }
 
   static getDerivedStateFromProps(props, state) {
@@ -25,28 +24,26 @@ class Calc extends React.Component {
   render() {
     return (
       <div className="calculator">
-        <h3> Калькулятор обмена валют в EUR</h3>
-        <div className="block">
-          <div>Я хочу</div>
-
-          <div>
-            <form onSubmit={this.calcRate}>
-              <input type="number" defaultValue="150" name="count-currency" />
-              <select name="type-currency" id="">
+        <h3 className="calculator-title">Currency exchange calculator in EUR</h3>
+        <div className="calculator-block">
+          <div className="calculator-block__wish">I want:</div>
+          <div className="calculator-block__form">
+            <form onSubmit={this.calcRate} className="calculator-form">
+              <input type="number" defaultValue="150" placeholder="Enter your value" name="count-currency" className="calculator-form__input"/>
+              <select name="type-currency" id="" className="calculator-form__select">
                 {Object.keys(this.props.rate).map((keyName, i) =>
                 (
-
-                  <option key={keyName} value={keyName}>{keyName}</option>
+                  <option key={keyName} value={keyName} className="calculator-form__option">{keyName}</option>
                 )
                 )}
               </select>
-              <input type="submit" defaultValue="calc" />
+              <input type="submit" value="calculate" className="calculator-form__submit _btn"/>
             </form>
           </div>
-          <div>
-            <h4>Результат</h4>
-            <ul className="calc-res">
-              <li>EUR {this.state.result.toFixed(2)}</li>
+          <div className="calculator-block__result result-block">
+            <h4 className="result-block__title">Result:</h4>
+            <ul className="result-block__result">
+              <li className="result-block__result_currency">EUR {this.state.result.toFixed(2)}</li>
             </ul>
           </div>
         </div>

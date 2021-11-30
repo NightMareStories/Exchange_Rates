@@ -1,0 +1,44 @@
+//======================= import ========================
+
+@import '../../vars';
+
+//=======================================================
+
+
+//======================= styles ========================
+
+.header-nav {
+    background: linear-gradient(45deg, #487922, #ffffff00);
+}
+
+.nav-links {
+    &__links {
+        display: flex;
+        flex-direction: row;
+        &_link {
+            font-size: 20px;
+            padding: 15px 25px 15px;
+            color: #ffffff;
+            display: block;
+            &:hover {
+                background: #ffffff;
+                color: #000000;
+            }
+        }
+    }
+}
+
+//=======================================================
+
+
+//======================== media ========================
+
+@media (max-width: 576px) {
+    .nav-links {
+        &__links {
+            justify-content: center;
+        }
+    }
+}
+
+//=======================================================
