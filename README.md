@@ -2,23 +2,31 @@
 &nbsp;
 
 ---
-## This app is written in ReactJS. To test it, you need to install all dependencies with the "npm i" command in the terminal.
+## This app is written in ReactJS. To test it, you need to:
+### **1. `First you need to install `"[NodeJS](https://nodejs.org/)"` on your computer. To check its presence on your PC, enter the command in the terminal:`**
+
+```
+node --version 
+```
+
+```
+npm --version
+```
+
+### `If the commands work and display versions, then "Node" and "NPM" are already installed;`
+### **2. `Install all dependencies with the "npm i" command in the terminal:`
 &nbsp; 
 
 ```
-
 npm i
-
 ```
 &nbsp;
 
-### After installing all the necessary modules, you can start the application with the "npm start" command.
+### **3. `After installing all the necessary modules, you can start the application with the "npm start" command:`
 &nbsp;
 
 ```
-
 npm start
-
 ```
 &nbsp;
 ## **Now get to work!**
