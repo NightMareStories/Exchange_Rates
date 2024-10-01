@@ -14,7 +14,7 @@ class Rate extends React.Component {
   }
 
   getRate = () => {
-    fetch('http://api.exchangeratesapi.io/v1/latest?access_key=97a3a9a0208b90896597ebcaf20c03e3')
+    fetch('https://api.exchangeratesapi.io/v1/latest?access_key=97a3a9a0208b90896597ebcaf20c03e3')
       .then(data => {
         return data.json();
       })

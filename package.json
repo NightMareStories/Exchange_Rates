@@ -1,6 +1,6 @@
 {
   "name": "exchange_rates",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "'Exchange Rates' is an application written in 'ReactJS' using 'Class' to create components, made available in 'JavaScript ES6'. The work of the application is to receive the exchange rate from the API service, and the ability to exchange a specific currency into the euro currency",
   "private": true,
   "main": "index.js",
