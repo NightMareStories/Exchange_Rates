@@ -8,7 +8,7 @@ class Footer extends React.Component {
       <footer id="footer" className="footer">
         <div className="footer-block">
           <div className="footer-block__content block-copyrights">
-            <h1 className="footer-title">2024 &copy; ReactJS. Exchange Rates.</h1>
+            <h1 className="footer-title">2026 &copy; ReactJS. Exchange Rates.</h1>
             <p>All Rights Reserved</p>
           </div>
         </div>
